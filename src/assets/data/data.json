@@ -1,0 +1,280 @@
+[{
+    "id": 1,
+    "numCamiseta": 1,
+    "posicion": "Portero",
+    "dato_personal": {
+      "nombre": "Franco",
+      "apellido": "Armani",
+      "edad": 34
+    }
+    },
+  {
+    "id": 2,
+    "numCamiseta": 14,
+    "posicion": "Portero",
+    "dato_personal": {
+      "nombre": "Germán Darío",
+      "apellido": "Lux",
+      "edad": 38
+    }
+  },
+  {
+    "id": 3,
+    "numCamiseta": 25,
+    "posicion": "Portero",
+    "dato_personal": {
+      "nombre": "Enrique Alberto",
+      "apellido": "Bologna Gómez",
+      "edad": 39
+    }
+  },
+  {
+    "id": 4,
+    "numCamiseta": 2,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Robert",
+      "apellido": "Rojas",
+      "edad": 24
+    }
+  },
+  {
+    "id": 5,
+    "numCamiseta": 4,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Jonathan Ramón",
+      "apellido": "Maidana",
+      "edad": 35
+    }
+  },
+  {
+    "id": 6,
+    "numCamiseta": 6,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Héctor David",
+      "apellido": "Martínez",
+      "edad": 23
+    }
+  },
+  {
+    "id": 7,
+    "numCamiseta": 16,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Alex ",
+      "apellido": "Vigo Gamaliel",
+      "edad": 21
+    }
+  },
+  {
+    "id": 8,
+    "numCamiseta": 16,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Jorge Luis",
+      "apellido": "Moreira Ferreira",
+      "edad": 31
+    }
+  },
+  {
+    "id": 9,
+    "numCamiseta": 17,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Paulo César",
+      "apellido": "Díaz Huincales",
+      "edad": 26
+    }
+  },
+  {
+    "id": 10,
+    "numCamiseta": 22,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Javier Horacio ",
+      "apellido": "Pinola",
+      "edad": 38
+    }
+  },
+  {
+    "id": 11,
+    "numCamiseta": 29,
+    "posicion": "Defensa",
+    "dato_personal": {
+      "nombre": "Gonzalo Ariel ",
+      "apellido": "Montiel",
+      "edad": 24
+    }
+  },
+  {
+    "id": 12,
+    "numCamiseta": 3,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Fabricio",
+      "apellido": "Angileri",
+      "edad": 26
+    }
+  },
+  {
+    "id": 13,
+    "numCamiseta": 5,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Bruno",
+      "apellido": "Zuculini",
+      "edad": 27
+    }
+  },
+  {
+    "id": 14,
+    "numCamiseta": 7,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Matías Ezequiel",
+      "apellido": "Suárez",
+      "edad": 32
+    }
+  },
+  {
+    "id": 15,
+    "numCamiseta": 8,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Agustín",
+      "apellido": "Palavecino Lamela",
+      "edad": 24
+    }
+  },
+  {
+    "id": 16,
+    "numCamiseta": 8,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Jorge",
+      "apellido": "Carrascal",
+      "edad": 22
+    }
+  },
+  {
+    "id": 17,
+    "numCamiseta": 11,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Diego Nicolás",
+      "apellido": "De La Cruz Arcosa",
+      "edad": 23
+    }
+  },
+  {
+    "id": 18,
+    "numCamiseta": 20,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Milton",
+      "apellido": "Casco",
+      "edad": 32
+    }
+  },
+  {
+    "id": 19,
+    "numCamiseta": 23,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Leonardo Daniel",
+      "apellido": "Ponzio",
+      "edad": 39
+    }
+  },
+  {
+    "id": 20,
+    "numCamiseta": 24,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Enzo Nicolás",
+      "apellido": "Pérez",
+      "edad": 35
+    }
+  },
+  {
+    "id": 21,
+    "numCamiseta": 26,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "José Antonio",
+      "apellido": "Paradela",
+      "edad": 22
+    }
+  },
+  {
+    "id": 22,
+    "numCamiseta": 33,
+    "posicion": "Centrocampista",
+    "dato_personal": {
+      "nombre": "Santiago",
+      "apellido": "Simón",
+      "edad": 18
+    }
+  },
+  {
+    "id": 23,
+    "numCamiseta": 9,
+    "posicion": "Delantero",
+    "dato_personal": {
+      "nombre": "Julián ",
+      "apellido": "Álvarez",
+      "edad": 21
+    }
+  },
+  {
+    "id": 24,
+    "numCamiseta": 15,
+    "posicion": "Delantero",
+    "dato_personal": {
+      "nombre": "Federico",
+      "apellido": "Girotti Bonazza",
+      "edad": 21
+    }
+  },
+  {
+    "id": 25,
+    "numCamiseta": 18,
+    "posicion": "Delantero",
+    "dato_personal": {
+      "nombre": "Lucas",
+      "apellido": "Beltrán",
+      "edad": 19
+    }
+  },
+  {
+    "id": 26,
+    "numCamiseta": 19,
+    "posicion": "Delantero",
+    "dato_personal": {
+      "nombre": "Rafael",
+      "apellido": "Borré",
+      "edad": 25
+    }
+  },
+  {
+    "id": 27,
+    "numCamiseta": 27,
+    "posicion": "Delantero",
+    "dato_personal": {
+      "nombre": "Cristian Agustín",
+      "apellido": "Fontana",
+      "edad": 24
+    }
+  },
+  {
+    "id": 28,
+    "numCamiseta": 30,
+    "posicion": "Delantero",
+    "dato_personal": {
+      "nombre": "Benjamín ",
+      "apellido": "Rollheiser",
+      "edad": 20
+    }
+  }]

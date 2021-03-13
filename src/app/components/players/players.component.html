@@ -1,0 +1,112 @@
+<h3>Lista de Jugadores Profesionales</h3>
+<div class="row justify-content-left">
+  <div class="col-md-2 col-sm-2">
+    <button class="btn btn-primary" (click)="addEditPlayer(null)">Agregar Jugador</button>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8 col-sm-12">
+    <div class="table-responsive">
+      <table class="table table-sm table-bordered table-hover">
+        <thead>
+          <tr class="thead-light">
+            <th class="text-center" scope="col">#</th>
+            <th class="text-center" scope="col">Nombre</th>
+            <th class="text-center" scope="col">Edad</th>
+            <th class="text-center" scope="col">Posici&oacute;n</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  class="table-warning"  *ngFor="let player of players" [ngClass]="{
+            'table-success':player.posicion === 'Delantero',
+            'table-primary':player.posicion === 'Defensa',
+            'table-info':player.posicion === 'Centrocampista',
+            'table-warning':player.posicion === 'Portero'
+          }">
+            <td class="text-right" scope="row">{{ player.numCamiseta }}</td>
+            <td>{{ player.dato_personal.nombre }} {{ player.dato_personal.apellido }} </td>
+            <td class="text-center">{{ player.dato_personal.edad }}</td>
+            <td>{{ player.posicion }}</td>
+            <td class="text-center">
+              <div class="btn-group" role="group">
+                  <button class="btn btn-primary btn-sm" (click)="addEditPlayer(player)">Editar</button>
+              </div>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalJugador">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">{{ !isNew ? "Actualizar" : "Agregar" }} jugador</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+          <div class="form-row">
+            <div class="form-group col-md-3" style="text-align: right;">
+              #:
+            </div>
+            <div class="form-group col-md-8" style="text-align: left;">
+              <input formControlName="numCamiseta" type="number" class="form-control" min="1" max="99" placeholder="Ingrese Número de camiseta" />
+              <small class="text-danger" *ngIf="form.controls.numCamiseta.touched && form.controls.numCamiseta.errors?.required">Dato requerido</small>
+            </div>
+            <div class="form-group col-md-3" style="text-align: right;">
+              Nombre:
+            </div>
+            <div class="form-group col-md-8" style="text-align: left;">
+              <input formControlName="nombre" type="text" class="form-control"  maxlength="40" placeholder="Ingrese nombre" />
+              <small class="text-danger" *ngIf="form.controls.nombre.touched && form.controls.nombre.errors?.required">Dato requerido</small>
+            </div>
+            <div class="form-group col-md-3" style="text-align: right;">
+              Apellido:
+            </div>
+            <div class="form-group col-md-8" style="text-align: left;">
+              <input formControlName="apellido" type="text" class="form-control" maxlength="40" placeholder="Ingrese apellido" />
+              <small class="text-danger" *ngIf="form.controls.apellido.touched && form.controls.apellido.errors?.required">Dato requerido</small>
+            </div>
+            <div class="form-group col-md-3" style="text-align: right;">
+              Edad:
+            </div>
+            <div class="form-group col-md-8" style="text-align: left;">
+              <input formControlName="edad" type="number" class="form-control" min="13" max="50" placeholder="Ingrese Edad" />
+              <small class="text-danger" *ngIf="form.controls.edad.touched && form.controls.edad.errors?.required">Dato requerido</small>
+            </div>
+            <div class="form-group col-md-3" style="text-align: right;">
+              Posici&oacute;n:
+            </div>
+            <div class="form-group col-md-8" style="text-align: left;">
+              <select formControlName="posicion" class="form-control" >
+                <option value="">Seleccione posici&oacute;n</option>
+                <option *ngFor="let p of posiciones" [value]="p" [attr.selected]="p==posicion ? true : null">
+                  {{p}}
+                </option>
+              </select>
+              <small class="text-danger" *ngIf="form.controls.posicion.touched && form.controls.posicion.errors?.required">Dato requerido</small>
+            </div>            
+          </div>
+          <div  class="form-row">
+            <div class="form-group col-md-12 text-center">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>&nbsp;
+              <button [disabled]="!form.valid" type="submit" class="btn btn-success">{{ !isNew ? "Actualizar" : "Agregar" }} jugador</button><br><br> 
+            </div>
+          </div>
+        </form>
+      </div>      
+      <!-- Modal footer 
+      <div class="modal-footer">
+        
+      </div>-->
+      
+    </div>
+  </div>
+</div>
